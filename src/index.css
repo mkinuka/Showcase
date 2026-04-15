@@ -1,0 +1,23 @@
+﻿@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-50: oklch(0.97 0.02 270);
+  --color-primary-100: oklch(0.93 0.04 270);
+  --color-primary-200: oklch(0.87 0.08 270);
+  --color-primary-300: oklch(0.78 0.12 270);
+  --color-primary-400: oklch(0.68 0.17 270);
+  --color-primary-500: oklch(0.59 0.22 270);
+  --color-primary-600: oklch(0.50 0.24 270);
+  --color-primary-700: oklch(0.43 0.22 270);
+  --color-primary-800: oklch(0.36 0.19 270);
+  --color-primary-900: oklch(0.30 0.15 270);
+  --color-primary-950: oklch(0.22 0.11 270);
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+  }
+}
